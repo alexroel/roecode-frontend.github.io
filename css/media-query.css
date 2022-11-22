@@ -11,9 +11,8 @@
     /* Curso */
     .info-course .header {
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 0.5fr 0.5fr;
         margin: 5px 0;
-        height: 680px;
     }
 
     .info-course .title, .info-course .img{
@@ -22,7 +21,6 @@
 
     .info-course .title{
         grid-row: 2;
-        height: 280px;
         justify-content: center;
     }
 
@@ -34,7 +32,7 @@
     /* Tutoriales */
     .new-tutorial .row{
         display: grid;
-        grid-template-rows: 1fr 0.5fr;
+        grid-template-rows: 0.5fr 0.5fr;
     }
 
     .new-tutorial .video, .new-tutorial .description{
