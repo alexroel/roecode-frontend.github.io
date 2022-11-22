@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>CKEditor 5 - Classic editor</title>
+    <script src="https://cdn.ckeditor.com/ckeditor5/35.3.1/classic/ckeditor.js"></script>
+</head>
+<body>
+    <h1>Classic editor</h1>
+    <form action="curso.html" method="POSt">
+        <input type="text" placeholder="titulo"> <br>
+        <textarea name="" id="" cols="30" rows="10" placeholder="descripcion"></textarea><br>
+        <input type="text" placeholder="url"><br>
+        <input type="file" name="img" id="img" accept="image/png, image/jpeg"> <br>
+        <textarea name="content" id="editor">
+            
+        </textarea>
+        <p><input type="submit" value="Submit"></p>
+    </form>
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
+</body>
+</html>
