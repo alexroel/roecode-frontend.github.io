@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Kode Mono', monospace, sans-serif;
+}
+
+:root {
+    --bg-color: #17202A;
+    --second-bg-color: #1B2631;
+    --text-color: #fff;
+    --main-color: #1ABC9C;
+}
+
+html{
+    font-size: 100%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+section{
+    min-height: 100vh;
+    padding: 7rem 9% 2rem;
+}
+
+
+/* MENU DE NAVEGACION 
+=====================================*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 71px;
+    padding: 0.5rem 9%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo img{
+    width: 3rem;
+    padding: 0.1rem;
+}
+
+.navbar a{
+    font-size: 1.2rem;
+    color: var(--text-color);
+    margin-left: 1rem;
+    font-weight: 500;
+}
+
+.navbar a:hover, 
+.navbar a.active{
+    color: var(--main-color);
+}
+
+/* SECTION BIGIN
+=====================================*/
+.begin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+.begin-content{
+    display: inline-block;
+    background-color: var(--second-bg-color);
+    padding: 3rem 2rem 4rem;
+    border-radius: 1rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.begin-content:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.begin-content p{
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 2rem 1rem;
+}
+
+/* BUTTON FOR THE PAGE AND SPAN
+=====================================*/
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: var(--main-color);
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem var(--main-color);
+    font-size: 1.3rem;
+    color: var(--second-bg-color);
+    letter-spacing: .1rem;
+    font-weight: 600;
+}
+
+.btn:hover{
+    box-shadow: none;
+}
+
+
+span{
+    color: var(--main-color);
+}
+
+/* SECSIÓN DE APRENDE A PROGRAMAR 
+========================================*/
+
+.learn{
+    background-color: var(--second-bg-color);
+}
+
+.heading{
+    margin-bottom: 3rem;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.learn p{
+    padding: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.learn-card{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 2rem 0;
+}
+
+.learn-card .card {
+    flex: 1 1 25rem;
+    background: var(--bg-color);
+    padding: 1rem .5rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    border: .2rem solid var(--second-bg-color);
+    transition: .5s ease;
+}
+
+.learn-card .card:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.learn-card .card h3{
+    font-size: 1.3rem;
+    color: #1ABC9C;
+}
+
+.learn-card .card img{
+    width: 15rem;
+}
+
+/* REDES SOCIALES 
+======================================  */
+.social{
+    margin-bottom: 4rem;
+}
+
+.social-content{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.social-content .youtube,
+.facebook{
+    flex: 1 40rem;
+    background-color: var(--second-bg-color);
+    padding: 2rem 2rem 3rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+}
+
+.social-content .my-social:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.social-content img{
+    display: inline-block;
+    width: 10vw;
+    margin-bottom: 1rem;
+}
+
+.social-content h3{
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.social-content p{
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+/* STYLES FOR THE COURSES
+======================================*/
+.courses{
+    background: var(--second-bg-color);
+}
+
+.courses-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.courses-container .course-box{
+    position: relative;
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+}
+
+.course-box img{
+    width: 100%;
+    transition: .5s ease;
+}
+
+.course-box:hover img{
+    transform: scale(1.1);
+}
+
+.course-box .course-layer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(11, 9, 9, 0.671), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 5rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.course-box:hover .course-layer{
+    transform: translateY(0)
+}
+
+.course-layer h3{
+    font-size: 1.4rem;
+}
+
+.course-layer p{
+    margin: .3rem 0 1rem;
+}
+
+.course-layer a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.course-layer a i {
+    font-size: 1.5rem;
+    color: var(--second-bg-color);
+}
+
+
+/* TESTIMONIO DE ESTUDIANTES 
+======================================*/
+.qualification-container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.qualification-container .card {
+    flex: 1 1 30rem;
+    background: var(--second-bg-color);
+    border-radius: 1rem;
+    border: .2rem solid var(--bg-color);
+    transition: .5s ease;
+    padding: 3rem 2rem;
+    margin: 0.5rem 0;
+}
+.qualification-container .card:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+
+
+/* PIE DE PÁGINA
+=================================*/
+
+.footer {
+    background-color: var(--second-bg-color);
+    padding: 2rem 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    padding: 2rem 9% 2rem;
+}
+
+.footer-container .rc-logo, 
+.about,
+.social-networks{
+    flex: 1 1 20rem;
+    padding: 3rem;
+}
+.footer-container .rc-logo {
+    text-align: center;
+}
+
+.footer-container .rc-logo img {
+    width: 10rem;
+}
+
+.footer-container .rc-logo h1 {
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.footer-container .about,
+.social-networks {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-container h2 {
+    margin: 1rem 0;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.footer-container a {
+    display: inline-block;
+    margin: 0.3rem 0;
+    text-decoration: none;
+    color: var(--text-color);
+    margin-left: 1rem;
+    font-size: 1.1rem;
+}
+
+.footer-container a .udemy {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+    border-radius: 3px;
+    padding: 1.5px 3px;
+}
+
+.footer-container a:hover {
+    color: var(--main-color);
+}
+
+.footer p {
+    text-align: center;
+    color: var(--main-color);
+    margin: 2rem 0;
+    font-size: 1.2rem;
+}
+
+
+
