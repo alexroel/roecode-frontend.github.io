@@ -49,6 +49,15 @@ section{
     align-items: center;
     z-index: 100;
 }
+.header .sticky {
+    border-bottom: .1rem solid rgb(0, 0, 0, .2);
+}
+
+#menu-icon{
+    font-size: 2rem;
+    color: var(--main-color);
+    display: none;
+}
 
 .logo img{
     width: 3rem;
@@ -73,8 +82,7 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 3rem;
+    gap: 1rem;
 }
 
 .begin-content{
@@ -89,6 +97,10 @@ section{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.begin-img img{
+    width: 35vw;
 }
 
 .begin-content:hover{
@@ -202,7 +214,8 @@ span{
     transition: .5s ease;
 }
 
-.social-content .my-social:hover{
+.social-content .youtube:hover, 
+.facebook:hover{
     border-color: var(--main-color);
     transform: scale(1.02);
 }
@@ -267,7 +280,7 @@ span{
     align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 0 5rem;
+    padding: 0 1rem;
     transform: translateY(100%);
     transition: .5s ease;
 }
@@ -277,7 +290,7 @@ span{
 }
 
 .course-layer h3{
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 .course-layer p{
@@ -333,72 +346,38 @@ span{
     background-color: var(--second-bg-color);
     padding: 2rem 0;
 }
-
 .footer-container {
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    flex-wrap: wrap;
-    gap: 2.5rem;
-    padding: 2rem 9% 2rem;
-}
-
-.footer-container .rc-logo, 
-.about,
-.social-networks{
-    flex: 1 1 20rem;
-    padding: 3rem;
-}
-.footer-container .rc-logo {
     text-align: center;
 }
 
-.footer-container .rc-logo img {
-    width: 10rem;
+.footer-container h2{
+    margin-bottom: 1rem;
 }
 
-.footer-container .rc-logo h1 {
-    text-transform: uppercase;
-    font-size: 3rem;
-    font-weight: 500;
-}
-
-.footer-container .about,
-.social-networks {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-container h2 {
-    margin: 1rem 0;
-    text-transform: uppercase;
-    font-weight: 600;
-}
-
-.footer-container a {
-    display: inline-block;
-    margin: 0.3rem 0;
-    text-decoration: none;
-    color: var(--text-color);
-    margin-left: 1rem;
-    font-size: 1.1rem;
-}
-
-.footer-container a .udemy {
-    background-color: var(--text-color);
-    color: var(--bg-color);
-    border-radius: 3px;
-    padding: 1.5px 3px;
-}
-
-.footer-container a:hover {
+.social-networks a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 1.5rem;
     color: var(--main-color);
+    margin: 2rem 1rem 2rem 0;
+    transition: .5s ease;
+}
+
+.social-networks a:hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
 }
 
 .footer p {
     text-align: center;
     color: var(--main-color);
-    margin: 2rem 0;
     font-size: 1.2rem;
 }
 

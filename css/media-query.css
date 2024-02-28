@@ -1,142 +1,62 @@
-@media screen and (max-width: 800px){
-    .social-networks {
-        display: block;
+@media screen and (max-width: 1400px){
+    .courses-container{
+        grid-template-columns: repeat(2, 1fr);
     }
+}
 
-    /* Cursos */
-    .col-course{
-        width: 40%;
-    }
-
-    /* Curso */
-    .info-course .header {
-        display: grid;
-        grid-template-rows: 0.5fr 0.5fr;
-        margin: 5px 0;
-    }
-
-    .info-course .title, .info-course .img{
-        width: 100%;
-    }
-
-    .info-course .title{
-        grid-row: 2;
-        justify-content: center;
-    }
-
-    .info-course .img{
-        grid-row: 1;
-        margin-top: 20px;
-    }
-
-    /* Tutoriales */
-    .new-tutorial .row{
-        display: grid;
-        grid-template-rows: 0.5fr 0.5fr;
-    }
-
-    .new-tutorial .video, .new-tutorial .description{
-        width: 100%;
-    }
-
-    .new-tutorial .video iframe{
-        width: 100%;
-        height: 385px;
-    }
-
-    .tutorials .tutorial{
-        width: 40%;
-        margin: 20px 10px;
-        padding: 5px;
-    }
-
-    /* Tutorial */
-    .tutorial-content .video iframe{
-        width: 100%;
-        height: 385px;
+@media screen and (max-width: 1200px){
+    html{
+        font-size: 80%;
     }
 }
 
 
-@media screen and (max-width: 500px){
-    header{
-        display: flex;
-        justify-content: center;
+@media screen and (max-width: 991px){
+    .header {
+        padding: 2rem 3%;
     }
-    header .logo{
+    section{
+        padding: 7rem 3% 2rem;
+    }
+
+    .begin{
+        display: block;
+        text-align: center;
+    }
+
+    .begin-img img {
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px){
+    #menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgb(0,0,0,.2);
+        box-shadow: 0 .5rem 1rem rgb(0, 0, 0,.2);
         display: none;
     }
 
-    header nav{
-        text-align: center;
-        margin-right: 0px;
-        padding: 20px 0;
+    .navbar.active {
+        display: block;
     }
 
-    header nav a{
-        display: inline-block;
-        margin: 10px;
+    .navbar a {
+        display: block;
+        font-size: 1.3rem;
+        margin: 2rem 0;
     }
 
-    
-    .get-started-content .get-started{
-        width: 95%;
-        margin: auto;
-    }
-
-    .learn-program .learn-program-card{
-        display: grid;
-    }
-
-    .learn-program-card .card{
-        width: 95%;
-    }
-
-    .qualification .card{
-        flex: 95%;
-    }
-
-    /* Footer */
-    footer .container{
-        display: grid;
-        justify-content: center;
-    }
-
-    footer .container .rc-logo{
-        width: 100%;
-    }
-
-    /* Cursos */
-    .col-course{
-        width: 100%;
-    }
-
-    /* Tutoriales */
-    .new-tutorial .row{
-        display: grid;
-        grid-template-rows: 1fr 0.5fr;
-    }
-
-    .new-tutorial .video, .new-tutorial .description{
-        width: 100%;
-    }
-
-    .new-tutorial .video iframe{
-        width: 100%;
-        height: 233px;
-    }
-
-    .tutorials .tutorial{
-        width: 95%;
-    }
-
-    /* Tutorial */
-    .tutorial-content .video iframe{
-        width: 100%;
-        height: 233px;
-    }
-
-    .container{
-        width: 98%;
+    .courses-container{
+        grid-template-columns: 1fr;
     }
 }
