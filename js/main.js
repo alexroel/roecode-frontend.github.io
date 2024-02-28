@@ -44,7 +44,7 @@ window.onscroll = () => {
 
 //scroll relavete
 ScrollReveal({ 
-    reset: true,
+    //reset: true,
     distance: '80px',
     duration: 1000,
     delay: 200
@@ -56,4 +56,15 @@ ScrollReveal().reveal(
     '.begin-img, .btn, p, .card, .youtube, .facebook, .course-box, .social-networks', 
     { origin: 'bottom' }
 );
+
+// TExto multile dinmico 
+const typed = new Typed('.multiple-text',{
+    strings: ['HTML y CSS', 'JavScript', 'Python', 'Golang', 'Java'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+});
+
+
 
