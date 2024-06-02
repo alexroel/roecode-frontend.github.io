@@ -59,7 +59,7 @@ ScrollReveal().reveal(
 
 // TExto multile dinmico 
 const typed = new Typed('.multiple-text',{
-    strings: ['HTML y CSS', 'JavScript', 'Python', 'Golang', 'Java'],
+    strings: ['HTML y CSS', 'JavaScript', 'Python', 'Golang', 'Java'],
     typeSpeed: 100,
     backSpeed: 100,
     backDelay: 1000,
