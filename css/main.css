@@ -57,6 +57,7 @@ section{
     font-size: 2rem;
     color: var(--main-color);
     display: none;
+    cursor: pointer;
 }
 
 .logo img{
